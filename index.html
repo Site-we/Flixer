@@ -20,7 +20,6 @@
             --card-border: rgba(255, 255, 255, 0.08);
             --accent-color: #38bdf8;
             --accent-glow: rgba(56, 189, 248, 0.15);
-            --gold-color: #fbbf24;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
         }
@@ -99,7 +98,7 @@
 
         /* Hero Section */
         .hero {
-            min-height: 90vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -176,7 +175,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 2.5rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         /* Glassmorphic Cards */
@@ -192,22 +191,13 @@
             position: relative;
             flex: 1;
             min-width: 280px;
-            max-width: 350px;
+            max-width: 340px;
         }
 
         .team-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-5px);
             border-color: rgba(56, 189, 248, 0.3);
             box-shadow: 0 12px 40px rgba(56, 189, 248, 0.08);
-        }
-
-        /* Special Stockholder Highlight style */
-        .team-card.stockholder {
-            border-color: rgba(251, 191, 36, 0.2);
-        }
-        .team-card.stockholder:hover {
-            border-color: rgba(251, 191, 36, 0.4);
-            box-shadow: 0 12px 40px rgba(251, 191, 36, 0.08);
         }
 
         .avatar-wrapper {
@@ -231,11 +221,6 @@
             border: 2px solid var(--card-border);
         }
 
-        .stockholder .team-avatar {
-            color: var(--gold-color);
-            border-color: rgba(251, 191, 36, 0.3);
-        }
-
         /* Role & Status Badges */
         .role-tag {
             color: var(--accent-color);
@@ -245,19 +230,6 @@
             letter-spacing: 1.5px;
             margin-top: 0.5rem;
             display: block;
-        }
-
-        .share-badge {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid rgba(251, 191, 36, 0.3);
-            color: var(--gold-color);
-            padding: 0.25rem 0.75rem;
-            border-radius: 30px;
-            font-size: 0.75rem;
-            font-weight: 600;
         }
 
         .team-card h3 {
@@ -341,7 +313,7 @@
         }
 
         @media (max-width: 768px) {
-            nav { display: none; } /* Simplified header tracking for mobile layouts */
+            nav { display: none; }
             .job-card {
                 flex-direction: column;
                 align-items: flex-start;
@@ -373,12 +345,12 @@
         <p>A powerhouse tech studio transforming ideas into production-ready software systems built to scale seamlessly.</p>
     </section>
 
-    <!-- Enhanced Corporate & Engineering Team Grid Structure -->
+    <!-- Unified Corporate & Engineering Team Grid Structure -->
     <section id="team">
-        <h2>Meet The <span>Flixer Leadership</span></h2>
+        <h2>Meet The <span>Flixer Team</span></h2>
         <div class="team-container">
             
-            <!-- Corporate Executives / Stakeholders Row -->
+            <!-- Tier 1: CEO & Lead Developer Side by Side -->
             <div class="team-row">
                 <div class="team-card">
                     <div class="avatar-wrapper"><div class="team-avatar">PV</div></div>
@@ -386,20 +358,19 @@
                     <span class="role-tag">Chief Executive Officer</span>
                 </div>
 
-                <div class="team-card stockholder">
-                    <span class="share-badge">👑 First Stockholder</span>
-                    <div class="avatar-wrapper"><div class="team-avatar">SNA</div></div>
-                    <h3>Sahil Nausadh Ansari</h3>
-                    <span class="role-tag" style="color: var(--gold-color);">Principal Stakeholder</span>
-                </div>
-            </div>
-
-            <!-- Engineering Force Row -->
-            <div class="team-row">
                 <div class="team-card">
                     <div class="avatar-wrapper"><div class="team-avatar">NK</div></div>
                     <h3>Nikhil Kumar</h3>
                     <span class="role-tag">Lead Developer</span>
+                </div>
+            </div>
+
+            <!-- Tier 2: First Stockholder and Engineering Force directly below -->
+            <div class="team-row">
+                <div class="team-card">
+                    <div class="avatar-wrapper"><div class="team-avatar">SNA</div></div>
+                    <h3>Sahil Nausadh Ansari</h3>
+                    <span class="role-tag">First Stockholder</span>
                 </div>
 
                 <div class="team-card">
